@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --height-nav: 60px;
+  --color-proyect: #2C2F34;
+  --color-background: #2C2F34;
+  --color-secondary: #0113A2;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+path {
+  fill: none;
+  stroke: #FCED18;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--height-nav);
+  font-size: 1.2em;
+}
+
+.header__title {
+  color: white;
+  font-weight: 500;
+  padding: 0.8em 1.7em;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.header__nav {
+  flex: 3;
+}
+
+.header__contact {
+  flex: 1;
+}
+.nav__ul {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.nav__li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav__li a {
+  text-decoration: none;
+  color: white;
+  padding: 1em 2em;
+  transition: all 200ms ease-in-out;
+}
+
+.nav__li a:hover {
+  color: black;
+  background-color: #FCED18;
+}
+
+.background1 {
+  /*background: linear-gradient(-45deg, #000D6F, #0113A2);*/
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.background1b {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.principal {
+  height: calc(100vh - var(--height-nav));
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.principal__title {
+  display: flex;
+}
+
+.principal__title div {
+  align-self: flex-end;
+  margin: 0 0 20px 5px;
+}
+
+.principal__title h1{
+  font-size: 6em;
+  color: white;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #FCED18;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/*
+.principal__title {
+   standard gradient background 
+  background: linear-gradient(270deg, #66ff00, #d3ff1a);
+
+   clip informático 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+*/
+
+.principal__img {
+  overflow: hidden;
+}
+
+.background2 {
+    background-color: #efeeee;
+    padding-top: 20vh;
+}
+
+.portfolio {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.portfolio__title {
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 400;
+  margin-bottom: 2em;
+  color: black;
+}
+
+.portfolio__proyects {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.proyect__container {
+  flex: calc(100% / 3);
+  padding: 1.4em;
+  max-width: calc(100% / 3);
+  margin-bottom: 1em;
+}
+
+.proyect__container a {
+    display: block;
+    text-decoration: none;
+}
+
+.proyect {
+  height: 400px;
+  background-color: #efeeee;
+  box-shadow: 8px 8px 26px 3px rgb(102, 102, 102),
+  -10px -10px 26px 0px rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+  color: black;
+  font-size: 1.2em;
+}
+
+
+
+.proyect:hover {
+    transform: scale(1.1);
+}
+
+.proyect:hover h3 {
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+.proyect figure {
+  padding: 1.5em 1.5em 0 1.5em;
+}
+
+.proyect__img {
+  width: 100%;
+}
+
+.proyect__description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-color: rgb(36, 36, 36);
+  padding: 1em 0 0.4em 0;
+}
+
+.proyect__description h3 {
+    margin-bottom: 0.5em;
+}
+
+
+.recuadro {
+  display: inline-block;
+  padding: 0.08em 1em;
+  margin: 0 2px;
+  margin: 0 2px;
+  border: 1px solid white;
+  font-size: 0.8em;
+}
+
+.proyect:hover .recuadro {
+    border-color: white;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
