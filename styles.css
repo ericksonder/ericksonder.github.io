@@ -43,6 +43,9 @@ path {
   align-items: center;
   height: var(--height-nav);
   font-size: 1.2em;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header__title {
