@@ -94,8 +94,9 @@ path {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: calc(100vh - var(--height-nav));
+  height: 100vh;
   min-height: 700px;
+  max-height: 1080px;
 }
 
 .background1b {
