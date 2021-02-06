@@ -7,22 +7,6 @@
   --color-secondary: #0113A2;
 }
 
-svg {
-  display: block;
-  margin: 0 auto;
-}
-
-path {
-  fill: none;
-  stroke: #FCED18;
-  stroke-width: 4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-
-
-
 
 * {
   margin: 0;
